@@ -1,10 +1,15 @@
 # SI2018UNALROBOT
 
-Pareja Inteligente: https://sites.google.com/unal.edu.co/isiperezmorales/
+##Materiales Entregados
+https://docs.google.com/spreadsheets/d/19K6xwYRsZ4K-IWwk4tCcKAwA44KL1BNgiXITMUyxIVw/edit?usp=sharing
 
+##Bitacoras Grupos
 
-## Si Perdemos Es Por Lag
+###Pareja Inteligente
+https://sites.google.com/unal.edu.co/isiperezmorales/
+
+### Si Perdemos Es Por Lag
 https://sites.google.com/unal.edu.co/siperdemosesporlag
 
-## Wall-e
+### Wall-e
 https://sites.google.com/unal.edu.co/wall-e-bitcora
