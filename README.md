@@ -36,3 +36,6 @@ https://sites.google.com/unal.edu.co/ostron
 
 ### Los Asperos
 https://sites.google.com/unal.edu.co/bitacora-ia
+
+### Agentes Irracionales
+https://sites.google.com/unal.edu.co/agentesirracionales
