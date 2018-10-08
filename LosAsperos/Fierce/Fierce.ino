@@ -24,13 +24,16 @@ void setup()
  Serial.begin(115200);
  mySerial.begin(115200);
  SendCommand("AT","OK");
- SendCommand("AT+CIOBAUD=115200","OK");
- SendCommand("AT+RST", "Ready");
- delay(5000);
- SendCommand("AT+CWMODE=1","OK");
+ SendCommand("AT+CWMODE=2","OK"); //Para que acceder al robot como AP
+ //SendCommand("AT+CWMODE=1","OK"); // Para que el robot sea parte de una red local
+ //SendCommand("AT+CWJAP=\"your_ssid\",\"your_pass\"","OK");
+ SendCommand("AT+RST", "Ready");  ;
  SendCommand("AT+CIFSR", "OK");
+ SendCommand("AT+CWLIF", "OK");
  SendCommand("AT+CIPMUX=1","OK");
  SendCommand("AT+CIPSERVER=1,80","OK");
+ SendCommand("AT+CIPMODE?","OK");
+ digitalWrite(LED,HIGH);
 }
  
 void loop(){   
@@ -62,6 +65,15 @@ void loop(){
   if (IncomingString.indexOf("LED=OFF") != -1) {
     digitalWrite(LED,LOW);
    }
+
+  if (IncomingString.indexOf("AV") != -1) {
+    digitalWrite(8,HIGH);
+    digitalWrite(9,HIGH);
+   }
+  if (IncomingString.indexOf("STOP") != -1) {
+    digitalWrite(8,LOW);
+    digitalWrite(9,LOW);
+    }
   }   
  
 }
